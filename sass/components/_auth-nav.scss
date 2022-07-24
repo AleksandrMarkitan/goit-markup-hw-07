@@ -1,0 +1,16 @@
+.auth-nav {
+  display: flex;
+  gap: 50px;
+}
+
+.auth-nav__link {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: $primary-text-color;
+}
+
+.auth-nav__icon-envelope,
+.auth-nav__icon-smartphone {
+  fill: currentColor;
+}
