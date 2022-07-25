@@ -1,4 +1,4 @@
-.footer-subscribe-button {
+.subscribe-button {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -44,7 +44,25 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.hero-data-close-modal-button {
+.modal__send-button {
+  display: block;
+  margin: auto;
+
+  min-width: 200px;
+  min-height: 50px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+
+  color: $primary-bg-color;
+  background: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.data-close-modal-button {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -62,13 +80,48 @@
   transition-property: color;
   transition-duration: $transition-duration;
   transition-timing-function: $transition-timing-function;
-
-  &__icon {
-    fill: currentColor;
-  }
+}
+.data-close-modal-button__icon {
+  fill: currentColor;
 
   &:hover,
   :focus {
     color: $accent-blue-color;
+  }
+}
+
+.portfolio-nav-button {
+  padding: 6px 22px;
+  border-radius: 4px;
+
+  background: &portfolio-button-bg-color;
+  color: &title-text-color;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  transition-property: background-color, color, box-shadow;
+  transition-duration: &transition-duration;
+  transition-timing-function: &transition-timing-function;
+
+  &--see {
+    background: $accent-blue-color;
+    color: $button-active-text-color;
+  }
+
+  &:hover {
+    background-color: $accent-blue-color;
+    color: $button-active-text-color;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+
+  &:focus {
+    background-color: $accent-blue-color;
+    color: $button-active-text-color;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
   }
 }
